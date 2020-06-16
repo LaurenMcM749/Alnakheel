@@ -1,0 +1,24 @@
+{% extends "base1.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+            <article class="card">
+            {% for post in post_list %}
+                {% if post.category == 'travel' %}
+                <div class="col-md-8 mb-8">
+                    <img class="card_image img-fluid" src="{{ post.image.url }}"/>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="card_title">{{ post.title }}</p>
+                    <p class="card_description">{{post.description}}</p>
+                    <h2 class="card_author">{{ post.author }}</h2>
+                    <a class="card_button btn" href="{% url 'post_detail' post.slug  %}">Read More</a>
+               </div>
+                {% endif %}
+            {% endfor %}
+            </article>
+    </div>
+</div>
+
+{% endblock %}
