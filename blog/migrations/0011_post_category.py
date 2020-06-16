@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='category',
-            field=models.CharField(choices=[('interviews', 'Interviews'), ('arts', 'Arts & Culture'), ('films', 'Film Reviews'), ('books', 'Book Reviews'), ('travel', 'Travel & Experience')], default='interviews', max_length=2),
+            field=models.CharField(choices=[('interviews', 'Interviews'), ('arts', 'Arts & Culture'), ('films', 'Film Reviews'), ('books', 'Book Reviews'), ('travel', 'Travel & Experience')], default='interviews', max_length=20),
         ),
     ]
