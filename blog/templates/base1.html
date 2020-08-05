@@ -13,11 +13,14 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href= "{% static 'css/style2.css' %}">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href= "{% static 'css/style2.css' %}">
+
 
          <script type = "text/javascript">
                $(document).ready(function () {
@@ -61,6 +64,9 @@
                 <li class="sidebar-brand">
                     <a href="{% url 'home' %}">النخيل</a>
                 </li>
+                 <li>
+                    <a href="{% url 'about' %}">About - عن المجلة</a>
+                </li>
                 <li>
                     <a href="{% url 'arts' %}">The Arts - الفنون</a>
                 </li>
@@ -87,20 +93,31 @@
                     <!--<li><a href="#">One more separated link</a></li>-->
                   <!--</ul>-->
                 <!--</li>-->
-                <li>
-                    <a href="{% url 'about' %}">About - عن المجلة</a>
-                </li>
+
             </ul>
         </nav>
     </div>
+
+
+
       <div id="page-content-wrapper">
             <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
                 <span class="hamb-top"></span>
     			<span class="hamb-middle"></span>
 				<span class="hamb-bottom"></span>
             </button>
-           <a href="{% url 'home' %}"><h1 class="title">النخيل</h1></a>
+          <a href="{% url 'home' %}">
+              <img src="static/img/logo4.jpg" style="width:250px;height:100px;position:relative;left:40%;top:-20px;">
+        </a>
+
       </div>
+
+
+
+
+
+
+
 
         <!-- /#sidebar-wrapper -->
 
