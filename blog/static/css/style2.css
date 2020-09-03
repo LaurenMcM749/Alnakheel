@@ -60,6 +60,10 @@ img {
 
 }
 
+li {
+    font-size: 2.5 rem;
+}
+
 /*      Wrappers      */
 
 
@@ -595,7 +599,12 @@ footer {
 
 }
 
---------/*Logo*/-------
+--------/*About*/-------
+
+.about_heading {
+    font-size: 4 rem;
+
+}
 
 
 
