@@ -5,7 +5,7 @@ from django.urls import path
 
 urlpatterns = [
     # path(r'', RedirectView.as_view(url='home', permanent=False)),
-    path('arts/', views.ArtsPostList.as_view(), name='arts'),
+    path('shortstories/', views.ArtsPostList.as_view(), name='shortstories'),
     path('books/', views.BooksPostList.as_view(), name='books'),
     path('films/', views.FilmsPostList.as_view(), name='films'),
     path('travel/', views.TravelPostList.as_view(), name='travel'),
